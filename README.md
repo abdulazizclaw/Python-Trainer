@@ -86,19 +86,41 @@ Python-Trainer/
 - A text editor (VS Code, PyCharm, etc.)
 - Terminal/Command Prompt
 
-### Installation
+### Installation (Quick)
 
+**macOS/Linux:**
 ```bash
-# Clone this repo
 git clone https://github.com/abdulazizclaw/Python-Trainer.git
 cd Python-Trainer
+bash INSTALL.sh
+```
 
-# Install dependencies
+**Windows:**
+```bash
+git clone https://github.com/abdulazizclaw/Python-Trainer.git
+cd Python-Trainer
+INSTALL.bat
+```
+
+### Installation (Manual)
+
+**macOS/Linux:**
+```bash
+git clone https://github.com/abdulazizclaw/Python-Trainer.git
+cd Python-Trainer
+pip3 install -r requirements.txt
+python3 run_tutorial.py
+```
+
+**Windows:**
+```bash
+git clone https://github.com/abdulazizclaw/Python-Trainer.git
+cd Python-Trainer
 pip install -r requirements.txt
-
-# Run the interactive tutorial
 python run_tutorial.py
 ```
+
+**Important:** Use `python3` and `pip3` on macOS/Linux, `python` and `pip` on Windows.
 
 ## Learning Path
 
