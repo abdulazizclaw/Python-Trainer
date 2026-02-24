@@ -31,8 +31,9 @@ def print_section(text):
 
 def run_file(filepath):
     """Run a Python file"""
+    filepath = str(filepath)  # Convert Path to string
     try:
-        subprocess.run(['python', filepath], check=True)
+        subprocess.run(['python3', filepath], check=True)
     except subprocess.CalledProcessError:
         print(f"{RED}Error running {filepath}{RESET}")
     except FileNotFoundError:
@@ -59,7 +60,9 @@ def show_menu():
 
 def main():
     """Main tutorial runner"""
-    base_path = Path(__file__).parent
+    # Get the directory where this script is located
+    script_path = Path(__file__).resolve()
+    base_path = script_path.parent
     
     while True:
         show_menu()
